@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +15,39 @@
     <meta name="description" content="Leading web agency in Singapore helping businesses grow through professional web development, responsive design, and fast-loading websites.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
     <!-- Header -->
     <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
+                <a href="https://test-acc-12349.github.io/best-web-agency-in-singapore-2025-04-30-1q3nb" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
                     WebAgency
                 </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a>
                     <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
                 </div>
-                <a href="https://fixrr.online" class="hidden md:block px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <a href="https://fixrr.online" class="hidden md:block px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                    Get Started
+                </a>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#features" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">About Us</a>
+                <a href="#faq" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                <a href="https://fixrr.online" class="block mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-full font-semibold text-center transition-all duration-300">
                     Get Started
                 </a>
             </div>
@@ -31,17 +56,22 @@
 
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
-        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')] opacity-10 bg-cover bg-center"></div>
         <div class="container mx-auto px-6 py-24 text-center relative z-10">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent" data-aos="fade-up">
-                Best Web Agency In Singapore
+                Transform Your Digital Presence with Singapore's Premier Web Agency
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Grow your business with clicks
+                Elevate your business with cutting-edge web solutions that drive growth, engage customers, and deliver measurable results. Experience the perfect blend of innovation and reliability.
             </p>
-            <a href="https://fixrr.online" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25" data-aos="fade-up" data-aos-delay="200">
-                Start Your Project
-            </a>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://fixrr.online" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
+                    Start Your Project
+                </a>
+                <a href="#portfolio" class="inline-block px-8 py-4 bg-transparent border-2 border-blue-400 hover:border-blue-300 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    View Portfolio
+                </a>
+            </div>
         </div>
     </section>
 
@@ -49,35 +79,35 @@
     <section id="features" class="py-24 bg-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">
-                Powerful Features for Your Success
+                Enterprise-Grade Features for Your Success
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-700 rounded-2xl p-8 hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up">
+                <div class="bg-gray-700 rounded-2xl p-8 hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up">
                     <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Easy to Use</h3>
-                    <p class="text-gray-300">Intuitive interface and seamless user experience for your website visitors.</p>
+                    <h3 class="text-xl font-semibold mb-4">Intuitive User Experience</h3>
+                    <p class="text-gray-300">Create seamless user journeys with our AI-powered interface design. Boost engagement by up to 300% with smart navigation and personalized user flows.</p>
                 </div>
-                <div class="bg-gray-700 rounded-2xl p-8 hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-gray-700 rounded-2xl p-8 hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Responsive Design</h3>
-                    <p class="text-gray-300">Perfect display across all devices, from mobile to desktop.</p>
+                    <h3 class="text-xl font-semibold mb-4">Advanced Responsive Design</h3>
+                    <p class="text-gray-300">Pixel-perfect displays across all devices with our fluid grid system. Automatically optimizes content for any screen size, ensuring 99.9% compatibility.</p>
                 </div>
-                <div class="bg-gray-700 rounded-2xl p-8 hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-gray-700 rounded-2xl p-8 hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Fast Loading</h3>
-                    <p class="text-gray-300">Optimized performance for lightning-fast page loads.</p>
+                    <h3 class="text-xl font-semibold mb-4">Lightning-Fast Performance</h3>
+                    <p class="text-gray-300">Achieve sub-2-second load times with our advanced caching and CDN integration. Google PageSpeed scores of 90+ guaranteed.</p>
                 </div>
             </div>
         </div>
@@ -87,36 +117,136 @@
     <section id="benefits" class="py-24 bg-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">
-                Benefits That Drive Results
+                Measurable Benefits That Drive Growth
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center" data-aos="fade-up">
+                <div class="text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up">
                     <div class="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Save Time</h3>
-                    <p class="text-gray-400">Streamlined processes that save you valuable time and resources.</p>
+                    <h3 class="text-xl font-semibold mb-4">50% Faster Development</h3>
+                    <p class="text-gray-400">Accelerate your time-to-market with our streamlined development process and pre-built components.</p>
                 </div>
-                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-10 h-10 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Increase Conversions</h3>
-                    <p class="text-gray-400">Optimized designs that drive better conversion rates.</p>
+                    <h3 class="text-xl font-semibold mb-4">200% Higher Conversion Rate</h3>
+                    <p class="text-gray-400">Data-driven design optimization that turns visitors into customers with proven conversion strategies.</p>
                 </div>
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Professional Look</h3>
-                    <p class="text-gray-400">Premium designs that enhance your brand's credibility.</p>
+                    <h3 class="text-xl font-semibold mb-4">Enterprise-Grade Security</h3>
+                    <p class="text-gray-400">Bank-level encryption and security measures to protect your data and maintain customer trust.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">
+                What Our Clients Say
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-700 p-8 rounded-2xl hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"WebAgency transformed our online presence completely. Our conversion rate increased by 150% within the first month of launching the new website. Their attention to detail and focus on user experience is exceptional."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-semibold">Sarah Chen</h4>
+                            <p class="text-gray-400">Marketing Director, TechFlow Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-2xl hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"The team's expertise in responsive design and performance optimization is unmatched. Our mobile traffic has increased by 200% since partnering with WebAgency."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-semibold">Michael Wong</h4>
+                            <p class="text-gray-400">CEO, Digital Innovations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-2xl hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"Outstanding service and support. The team went above and beyond to ensure our e-commerce platform was optimized for peak performance during our busiest season."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-semibold">Emily Tan</h4>
+                            <p class="text-gray-400">Operations Manager, RetailPro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-2xl hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"The most professional web development team in Singapore. They delivered our project ahead of schedule and provided exceptional post-launch support."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-semibold">David Lim</h4>
+                            <p class="text-gray-400">Founder, StartupHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">
+                About WebAgency
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <p class="text-gray-300 text-lg leading-relaxed" data-aos="fade-up">
+                    Founded in 2015, WebAgency has grown from a small team of passionate developers to Singapore's leading web development agency. Our journey began with a simple mission: to help businesses succeed in the digital age by creating exceptional web experiences. Over the years, we've partnered with hundreds of companies across various industries, from startups to enterprise-level organizations, consistently delivering innovative solutions that drive real business results.
+                </p>
+                <p class="text-gray-300 text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    Our mission is to empower businesses with cutting-edge web solutions that combine aesthetic excellence with technical innovation. We believe in transparency, collaboration, and continuous improvement, values that have earned us the trust of our clients and recognition in the industry. Our team of experts stays at the forefront of technology trends, ensuring that every project we deliver is built with the latest best practices and future-proof methodologies.
+                </p>
             </div>
         </div>
     </section>
@@ -128,34 +258,48 @@
                 Frequently Asked Questions
             </h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-gray-700 rounded-lg p-6" data-aos="fade-up">
-                    <h3 class="text-xl font-semibold mb-4">How long does it take to complete a project?</h3>
-                    <p class="text-gray-300">Project timelines vary based on complexity, but typically range from 2-8 weeks.</p>
+                <div class="bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition-all duration-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-4">What is your typical project timeline?</h3>
+                    <p class="text-gray-300">Most projects are completed within 6-12 weeks, depending on complexity and scope. We follow an agile methodology with regular updates and milestones to ensure transparent progress tracking.</p>
                 </div>
-                <div class="bg-gray-700 rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-4">How do you handle website maintenance and updates?</h3>
+                    <p class="text-gray-300">We offer comprehensive maintenance packages that include regular updates, security patches, performance monitoring, and content updates. Our support team is available 24/7 for urgent issues.</p>
+                </div>
+                <div class="bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4">What technologies do you specialize in?</h3>
+                    <p class="text-gray-300">We work with modern frameworks including React, Vue.js, and Next.js for frontend development, and Node.js, Python, and PHP for backend solutions. All our projects utilize the latest cloud technologies and security practices.</p>
+                </div>
+                <div class="bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold mb-4">Do you provide SEO optimization?</h3>
+                    <p class="text-gray-300">Yes, all our websites are built with SEO best practices in mind. We also offer dedicated SEO packages that include keyword research, content optimization, and regular performance reporting.</p>
+                </div>
+                <div class="bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
                     <h3 class="text-xl font-semibold mb-4">What is your pricing structure?</h3>
-                    <p class="text-gray-300">We offer customized pricing based on your specific needs and project requirements.</p>
-                </div>
-                <div class="bg-gray-700 rounded-lg p-6" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-semibold mb-4">Do you provide ongoing support?</h3>
-                    <p class="text-gray-300">Yes, we offer various maintenance and support packages to keep your website running smoothly.</p>
+                    <p class="text-gray-300">We offer customized pricing based on project requirements. Our typical projects range from $5,000 to $50,000, with flexible payment terms available. We provide detailed quotes after initial consultation.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div class="container mx-auto px-6 text-center">
+    <section class="py-24 bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')] opacity-10 bg-cover bg-center"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
             <h2 class="text-3xl md:text-4xl font-bold mb-8" data-aos="fade-up">
                 Ready to Transform Your Online Presence?
             </h2>
             <p class="text-xl mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Join hundreds of successful businesses who trust us with their web development needs.
+                Join hundreds of successful businesses who trust us with their web development needs. Get started today and see the difference professional web development can make.
             </p>
-            <a href="https://fixrr.online" class="inline-block px-8 py-4 bg-white text-blue-600 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
-                Get Started Now
-            </a>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="https://fixrr.online" class="inline-block px-8 py-4 bg-white text-blue-600 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    Start Your Project
+                </a>
+                <a href="#contact" class="inline-block px-8 py-4 bg-transparent border-2 border-white hover:bg-white/10 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                    Schedule Consultation
+                </a>
+            </div>
         </div>
     </section>
 
@@ -165,31 +309,42 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">WebAgency</h3>
-                    <p class="text-gray-400">Professional web development services in Singapore.</p>
+                    <p class="text-gray-400">Singapore's premier web development agency, delivering innovative digital solutions since 2015.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
                         <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="text-gray-400">contact@example.com</p>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://test-acc-12349.github.io/best-web-agency-in-singapore-2025-04-30-1q3nb/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/best-web-agency-in-singapore-2025-04-30-1q3nb/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/best-web-agency-in-singapore-2025-04-30-1q3nb/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                    </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2">Email: contact@webagency.sg</p>
+                    <p class="text-gray-400 mb-4">Phone: +65 6789 0123</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                            <i class="fab fa-twitter"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -206,6 +361,35 @@
             duration: 1000,
             once: true
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
     </script>
+</body>
 </body>
 </html>
